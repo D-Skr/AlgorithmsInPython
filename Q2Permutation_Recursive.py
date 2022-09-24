@@ -1,7 +1,7 @@
 from math import factorial
 
 
-##recursion
+#recursion
 def permute(string, pocket=""):
     if len(string) == 0:
         print(pocket)
@@ -17,7 +17,7 @@ def permute(string, pocket=""):
 print(permute("ABC", ""))
 
 
-##iteration
+#iteration
 def permutations(str):
     for p in range(factorial(len(str))):
         print(''.join(str))
