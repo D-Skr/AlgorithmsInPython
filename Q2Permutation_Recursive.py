@@ -1,20 +1,23 @@
 from math import factorial
-from re import I
 
+
+##recursion
 def permute(string, pocket=""):
     if len(string) == 0:
         print(pocket)
-    else: 
+    else:
         for i in range(len(string)):
             letter = string[i]
             front = string[0:i]
-            back = string[i+1:]
+            back = string[i + 1:]
             together = front + back
             permute(together, letter + pocket)
 
-print(permute("ABC", ""))    
+
+print(permute("ABC", ""))
 
 
+##iteration
 def permutations(str):
     for p in range(factorial(len(str))):
         print(''.join(str))
@@ -29,7 +32,8 @@ def permutations(str):
             temp = str[i - 1]
             str[i - 1] = str[q]
             str[q] = temp
-    
+
+
 s = 'ABC'
 s = list(s)
 permutations(s)
