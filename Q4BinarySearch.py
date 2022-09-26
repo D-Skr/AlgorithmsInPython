@@ -13,4 +13,8 @@ arr = [2, 5, 6, 7, 8, 11, 12, 44, 55]
 target = 55
 
 result = binary_itr(arr, 0, len(arr) - 1, target)
-print(result)
+
+if result != -1:
+    print("Target element is present at index %d" % result)
+else:
+    print("Element is not present in array")
