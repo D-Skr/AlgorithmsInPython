@@ -3,7 +3,7 @@
 #this can be done by sorting the positions of mice and holes.
 
 
-def assignHole(mice, holes):
+def assign_hole(mice, holes):
     #base - num of mice and holes should be the same
     if len(mice) != len(holes):
         return "Number of mice and holes not same"
@@ -25,6 +25,6 @@ def assignHole(mice, holes):
 mice = [4, -4, 2]
 holes = [4, 0, 5]
 
-min_time = assignHole(mice, holes)
+min_time = assign_hole(mice, holes)
 
 print("The last mouse gets into the hole in time: ", min_time)

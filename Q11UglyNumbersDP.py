@@ -3,7 +3,7 @@
 
 
 #function for finding the Nth ugly number
-def nthUgly(n):
+def nth_ugly(n):
     dpUgly = [0] * n
     dpUgly[0] = 1
 
@@ -33,4 +33,4 @@ def nthUgly(n):
 
 n = 15
 
-print("15th Ugly number is: ", nthUgly(n))
+print("15th Ugly number is: ", nth_ugly(n))
