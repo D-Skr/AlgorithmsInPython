@@ -1,4 +1,5 @@
-#Recursive function for successive divisions
+#Recursive function 
+#for successive divisions
 
 
 def successive_div(x, y):
